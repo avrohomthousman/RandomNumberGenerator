@@ -1,7 +1,8 @@
-package com.example.random_number_generator;
+package com.example.random_number_generator.activities;
 
 import android.os.Bundle;
 
+import com.example.random_number_generator.R;
 import com.google.android.material.snackbar.Snackbar;
 
 import androidx.appcompat.app.AppCompatActivity;
