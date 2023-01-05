@@ -180,10 +180,20 @@ public class MainActivity extends AppCompatActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_show_history) {
+            //TODO
             return true;
         }
-
-        return super.onOptionsItemSelected(item);
+        else if(id == R.id.action_clear_history){
+            //TODO
+            return true;
+        }
+        else if(id == R.id.action_about){
+            //TODO
+            return true;
+        }
+        else{
+            return super.onOptionsItemSelected(item);
+        }
     }
 }
