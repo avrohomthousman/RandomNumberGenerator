@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        setSupportActionBar(binding.toolbar);
+        setSupportActionBar(binding.toolbarFile.toolbar);
 
 
         setupFab();
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
      * Sets up the fab.
      */
     private void setupFab() {
-        binding.fab.setOnClickListener(new View.OnClickListener() {
+        binding.fabFile.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
