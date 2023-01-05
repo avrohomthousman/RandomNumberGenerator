@@ -42,17 +42,11 @@
 
 
     <!-- output -->
-    <TextView
-        android:id="@+id/output"
+    <include
+        android:id="@+id/output_file"
+        layout="@layout/output_section"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="@dimen/large_margin"
-        android:background="@drawable/border"
-        android:freezesText="true"
-        android:gravity="center"
-        android:padding="@dimen/small_padding"
-        android:text="@string/starting_output"
-        android:textAppearance="@style/TextAppearance.MaterialComponents.Headline4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/max_input_section" />

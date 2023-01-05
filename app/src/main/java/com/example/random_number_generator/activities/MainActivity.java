@@ -110,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
                 int result = mRandomNumber.getCurrentRandomNumber();
                 mNumberHistory.add(result);
 
-                binding.contentMain.output.setText(  String.valueOf(result)  );
+                binding.contentMain.outputFile.output.setText(  String.valueOf(result)  );
             }
         });
     }
