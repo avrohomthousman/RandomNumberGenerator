@@ -181,19 +181,44 @@ public class MainActivity extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_show_history) {
-            //TODO
+            showHistory();
             return true;
         }
         else if(id == R.id.action_clear_history){
-            //TODO
+            clearHistory();
             return true;
         }
         else if(id == R.id.action_about){
-            //TODO
+            displayAbout();
             return true;
         }
         else{
             return super.onOptionsItemSelected(item);
         }
+    }
+
+    /**
+     * Displays all the numbers generated so far.
+     */
+    private void showHistory() {
+        Utils.showInfoDialog (MainActivity.this,
+                "History", mNumberHistory.toString());
+    }
+
+
+    /**
+     * Clears the history of random numbers generated so far.
+     */
+    private void clearHistory(){
+        mNumberHistory.clear();
+    }
+
+
+    /**
+     * Displays a popup with information about this app.
+     */
+    private void displayAbout(){
+        Snackbar.make(binding.getRoot(), getString(R.string.about_text), Snackbar.LENGTH_LONG)
+                .show();
     }
 }
