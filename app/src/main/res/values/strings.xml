@@ -3,4 +3,8 @@
     <string name="action_settings">Settings</string>
     <string name="fab_text">Generate Random Number</string>
     <string name="banner_text">Please enter the random number range</string>
+    <string name="minimum_hint">1</string>
+    <string name="prompt_for_min">From: </string>
+    <string name="prompt_for_max">To: </string>
+    <string name="maximum_hint">100</string>
 </resources>
