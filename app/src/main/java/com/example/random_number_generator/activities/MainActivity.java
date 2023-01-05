@@ -30,6 +30,7 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     private static final String HISTORY_KEY = "history";
+    private static final String OUTPUT = "Your random number is %d";
 
     private RandomNumber mRandomNumber;
     private ArrayList<Integer> mNumberHistory;
@@ -110,7 +111,7 @@ public class MainActivity extends AppCompatActivity {
                 int result = mRandomNumber.getCurrentRandomNumber();
                 mNumberHistory.add(result);
 
-                binding.contentMain.outputFile.output.setText(  String.valueOf(result)  );
+                binding.contentMain.outputFile.output.setText(  String.format(OUTPUT, result)  );
             }
         });
     }
