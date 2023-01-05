@@ -4,4 +4,5 @@
     <dimen name="border_width">4dp</dimen>
     <dimen name="minInputWidth">30dp</dimen>
     <dimen name="small_padding">8dp</dimen>
+    <dimen name="large_margin">24dp</dimen>
 </resources>
